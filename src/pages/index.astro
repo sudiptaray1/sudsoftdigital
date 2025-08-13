@@ -1,5 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -18,12 +19,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         line-height: 1.6;
       }
 
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        color: #222;
-      }
-
       p {
         font-size: 1.1rem;
         color: #444;
@@ -38,8 +33,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     </style>
   </head>
   <body>
+    <Header />
     <main>
-      <h1>Sudsoft Digital Holdings LLC</h1>
       <p>
         Sudsoft Digital Holdings LLC is a New Jersey–based limited liability company
         specializing in the acquisition, holding, and management of digital assets
